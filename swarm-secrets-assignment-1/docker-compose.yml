@@ -16,7 +16,7 @@ services:
       - drupal-themes:/var/www/html/themes
  
   postgres:
-    image: postgres:14.3
+    image: postgres:14
     environment:
       - POSTGRES_PASSWORD_FILE=/run/secrets/psql-pw
     secrets:
